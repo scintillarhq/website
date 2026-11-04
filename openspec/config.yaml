@@ -1,32 +1,36 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+# Project context — shown to AI when creating artifacts.
+# Full company website brief (facts / speculation / TBD) lives in the linked file.
+# Do not invent customers, metrics, credentials, or advantages beyond that brief.
+context: |
+  Domain: Scintillar (深圳星提莱尔科技有限公司) company website — machine-vision industrial QC.
+  Canonical background brief (no code): openspec/context/company-website-brief.md (v1.2)
+  Hard rules from the brief:
+    - Brand-first single-page site; Chinese content only for now; reserve i18n hooks.
+    - Do not fabricate customers, case results, metrics, certifications, or unstated job titles.
+    - Positioning line (locked): 让工业质检定制，不再高成本、高门槛。
+    - Hero = value + problem + scene; put people/credentials in a Team section (not hero halo dump).
+    - Team (user-stated): 刘梦宇 (Chief AI Scientist; YOLO26 paper co-author arXiv:2606.03748);
+      谢思阳 & 陈润 (both formerly 华为 AI 使能部, multi-year frontline — no invented ranks).
+    - YOLO claim must stay “共同作者”, never “YOLO 原作者” / sole inventor.
+    - Public case wording: 手机中框外观缺陷检测 (in progress; no performance numbers).
+    - Contact: sales@scintillar.cn; WeCom QR deferred (“以后再说”) — do not fake a QR.
+    - Shareholder wording for 刘梦宇: verify business registry before publishing.
+  Out of scope until a dedicated change says otherwise: implementing site code, visual design systems,
+  English locale content, multi-page product IA, fabricated social proof, WeCom QR.
 
 # Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+# rules:
+#   proposal:
+#     - Keep proposals under 500 words
+#     - Always include a "Non-goals" section
 
 # Per-operation guidance (optional)
-# Add advisory guidance for how apply and archive work should be conducted.
-# This is separate from artifact rules above.
-# Example:
-#   operations:
-#     apply:
-#       guidance:
-#         - Keep test summaries concise
-#     archive:
-#       guidance:
-#         - Summarize the archive outcome before finishing
+# operations:
+#   apply:
+#     guidance:
+#       - Keep test summaries concise
+#   archive:
+#     guidance:
+#       - Summarize the archive outcome before finishing
